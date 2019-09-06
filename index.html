@@ -4,6 +4,7 @@
         <title>Javascript Test - Sterling Coins calculator</title>
         <meta type="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="styles/main.css">
+        <script type="text/javascript" src="scripts/main.js"></script>
     </head>
     <body>
         <div id="main">
@@ -20,9 +21,11 @@
                     <h1>Sterling Coins Calculator</h1>
                     <h3 class="sub-title">Calculates the equivalent amount of sterling coins based on the given amount</h3>
 
-                    <form action="javascript: void(0);" method="POST">
+                    <form action="javascript: void(0);" method="POST" onsubmit="coinCalculator()">
                         <input type="text" placeholder="Amount" id="coins" autocomplete="off"/><input type="submit" value="Calculate" id="sbm"/>
                     </form>
+
+                    <p>Input: <span id="input">0</span>p</p>
 
                     <table border="0" cellspacing="0" id="coin-list">
                         <thead>
@@ -36,42 +39,42 @@
                             <tr>
                                 <td>£2</td>
                                 <td>200</td>
-                                <td>0</td>
+                                <td id="2pound-counter">0</td>
                             </tr>
                             <tr>
                                 <td>£1</td>
                                 <td>100</td>
-                                <td>0</td>
+                                <td id="1pound-counter">0</td>
                             </tr>
                             <tr>
                                 <td>50p</td>
                                 <td>50</td>
-                                <td>0</td>
+                                <td id="50p-counter">0</td>
                             </tr>
                             <tr>
                                 <td>20p</td>
                                 <td>20</td>
-                                <td>0</td>
+                                <td id="20p-counter">0</td>
                             </tr>
                             <tr>
                                 <td>10p</td>
                                 <td>10</td>
-                                <td>0</td>
+                                <td id="10p-counter">0</td>
                             </tr>
                             <tr>
                                 <td>5p</td>
                                 <td>5</td>
-                                <td>0</td>
+                                <td id="5p-counter">0</td>
                             </tr>
                             <tr>
                                 <td>2p</td>
                                 <td>2</td>
-                                <td>0</td>
+                                <td id="2p-counter">0</td>
                             </tr>
                             <tr>
                                 <td>1p</td>
                                 <td>1</td>
-                                <td>0</td>
+                                <td id="1p-counter">0</td>
                             </tr>
                         </tbody>
                     </table>
