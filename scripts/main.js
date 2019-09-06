@@ -51,7 +51,7 @@ function coinCalculator(){
 
     let match = input.match(/[abcdefghijklmnoqrstuvwxyz]+/i); //Scan for unwanted, non-numeric, characters
 
-    if(match !== null){ //If the input contains unwanted characters, throw an error and "exit" the script
+    if(match !== null || input.split(".").length >= 3){ //If the input contains unwanted characters or has more than one dot, throw an error and "exit" the script
         alert("Please enter a correct format!");
         return false;
     }
