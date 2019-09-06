@@ -1,14 +1,80 @@
 <!doctype html>
 <html>
     <head>
-        <title>Javascript Test - Sterling Coins</title>
+        <title>Javascript Test - Sterling Coins calculator</title>
         <meta type="viewport" content="width=device-width,inital-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
         <div id="main">
             <div id="header">
-                <div id="header-text">
-                    <h2>Sequel JavaScript Exercise</h2>
+                <div class="container">
+                    <div id="header-text">
+                        <h2>Sequel JavaScript Exercise</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="container">
+                    <h1>Sterling Coins Calculator</h1>
+                    <h3 class="sub-title">Calculates the equivalent amount of sterling coins based on the given amount</h3>
+
+                    <form action="javascript: void(0);" method="POST">
+                        <input type="text" placeholder="Amount" id="coins" autocomplete="off"/><input type="submit" value="Calculate" id="sbm"/>
+                    </form>
+
+                    <table border="0" cellspacing="0" id="coin-list">
+                        <thead>
+                            <tr>
+                                <td>Coin</td>
+                                <td>Pence value</td>
+                                <td>Counter</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>£2</td>
+                                <td>200</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>£1</td>
+                                <td>100</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>50p</td>
+                                <td>50</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>20p</td>
+                                <td>20</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>10p</td>
+                                <td>10</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>5p</td>
+                                <td>5</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>2p</td>
+                                <td>2</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1p</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
